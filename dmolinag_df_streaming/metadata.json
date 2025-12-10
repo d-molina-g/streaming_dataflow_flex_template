@@ -1,0 +1,43 @@
+{
+  "name": "session-events-py",
+  "description": "Flex Template for Session Events Pipeline (Python / Apache Beam)",
+  "parameters": [
+    { "name": "df_runner",              "label": "df_runner",              "helpText": "Execution runner",                    "regexes": [".*"] },
+    { "name": "streaming",              "label": "streaming",              "helpText": "Enable streaming mode (true/false)",  "regexes": [".*"] },
+
+    { "name": "project_worker",         "label": "project_worker",         "helpText": "Worker project ID",                   "regexes": [".*"] },
+    { "name": "project_data",           "label": "project_data",           "helpText": "Data project ID",                     "regexes": [".*"] },
+
+    { "name": "df_region",              "label": "df_region",              "helpText": "Dataflow region",                     "regexes": [".*"] },
+    { "name": "df_job_name",            "label": "df_job_name",            "helpText": "Job name",                            "regexes": [".*"] },
+
+    { "name": "df_temp_location",       "label": "df_temp_location",       "helpText": "GCS temporary folder",                "regexes": [".*"] },
+    { "name": "df_staging_location",    "label": "df_staging_location",    "helpText": "GCS staging folder",                  "regexes": [".*"] },
+
+    { "name": "df_num_workers",         "label": "df_num_workers",         "helpText": "Initial number of workers",           "regexes": [".*"] },
+    { "name": "df_min_num_workers",     "label": "df_min_num_workers",     "helpText": "Minimum workers",                     "regexes": [".*"] },
+    { "name": "df_max_num_workers",     "label": "df_max_num_workers",     "helpText": "Maximum workers",                     "regexes": [".*"] },
+    { "name": "df_machine_type",        "label": "df_machine_type",        "helpText": "Worker machine type",                 "regexes": [".*"] },
+
+    { "name": "autoscaling_algorithm",  "label": "autoscaling_algorithm",  "helpText": "Autoscaling mode",                    "regexes": [".*"] },
+    { "name": "df_network",             "label": "df_network",             "helpText": "VPC network",                         "regexes": [".*"] },
+    { "name": "df_use_public_ips",      "label": "df_use_public_ips",      "helpText": "Use public IPs (true/false)",         "regexes": [".*"] },
+
+    { "name": "df_service_account",     "label": "df_service_account",     "helpText": "Worker service account email",        "regexes": [".*"] },
+    { "name": "out_dataset",            "label": "out_dataset",            "helpText": "Output BigQuery dataset",             "regexes": [".*"] },
+    { "name": "out_table",              "label": "out_table",              "helpText": "Output BigQuery table",               "regexes": [".*"] },
+
+    { "name": "in_pubsub_sub",          "label": "in_pubsub_sub",          "helpText": "Input Pub/Sub subscription",          "regexes": [".*"] },
+    { "name": "in_pubsub_config_sub",   "label": "in_pubsub_config_sub",   "helpText": "Pub/Sub config subscription",         "regexes": [".*"] },
+
+    { "name": "in_secret_project",      "label": "in_secret_project",      "helpText": "Secret Manager project",              "regexes": [".*"] },
+    { "name": "in_secret_key",          "label": "in_secret_key",          "helpText": "Secret key name",                     "regexes": [".*"] },
+    { "name": "in_secret_iv",           "label": "in_secret_iv",           "helpText": "Secret IV name",                      "regexes": [".*"] },
+
+    { "name": "in_crypt_charset",       "label": "in_crypt_charset",       "helpText": "Charset for encryption",              "regexes": [".*"] },
+    { "name": "in_crypt_fields",        "label": "in_crypt_fields",        "helpText": "Fields to encrypt",                   "regexes": [".*"] },
+
+    { "name": "in_event_key_field",     "label": "in_event_key_field",     "helpText": "Session key field",                   "regexes": [".*"] },
+    { "name": "in_session_window",      "label": "in_session_window",      "helpText": "Session window (seconds)",            "regexes": [".*"] }
+  ]
+}
